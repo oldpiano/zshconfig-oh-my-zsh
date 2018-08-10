@@ -25,6 +25,6 @@ alias d='dirs -v | head -10'
 
 # List directory contents
 alias lsa='ls -lah'
-alias l='ls -lah'
-alias ll='ls -lh'
-alias la='ls -lAh'
+alias l='ls -lAhFG'
+alias ll='ls -lhFG'
+alias la='ls -lAhFG'
