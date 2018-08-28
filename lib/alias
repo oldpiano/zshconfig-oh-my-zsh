@@ -1,0 +1,5 @@
+alias ls='ls -AhFG'
+alias ll='ls -AhlFG'
+alias grep='grep -In --colour=always '
+alias lsop='lsof -nP -i | grep LISTEN'
+alias psgrep='ps aux | grep -i '
