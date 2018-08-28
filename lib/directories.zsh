@@ -24,6 +24,9 @@ alias rd=rmdir
 alias d='dirs -v | head -10'
 
 # List directory contents
+if [[ `uname` != "Darwin" ]]; then
+  alias ls='ls --color=auto'
+fi
 alias lsa='ls -lah'
 alias l='ls -lAhFG'
 alias ll='ls -lhFG'
