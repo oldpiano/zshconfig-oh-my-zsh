@@ -27,7 +27,9 @@ alias d='dirs -v | head -10'
 if [[ `uname` != "Darwin" ]]; then
   alias ls='ls --color=auto'
 fi
+alias ls='ls -AhFG'
 alias lsa='ls -lah'
 alias l='ls -lAhFG'
 alias ll='ls -lhFG'
 alias la='ls -lAhFG'
+alias ll='ls -AhlFG'
