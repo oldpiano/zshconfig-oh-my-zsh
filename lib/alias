@@ -1,3 +1,4 @@
 alias grep='grep -In --colour=always '
 alias lsop='lsof -nP -i | grep LISTEN'
 alias psgrep='ps aux | grep -i '
+alias hgrep='history | grep -i '
