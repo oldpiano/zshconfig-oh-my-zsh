@@ -62,6 +62,7 @@ plugins=(
   git
   osx
   common-aliases
+  percol
 )
 
 source $ZSH/oh-my-zsh.sh
