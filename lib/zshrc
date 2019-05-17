@@ -63,6 +63,7 @@ plugins=(
   osx
   common-aliases
   percol
+  zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
