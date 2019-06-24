@@ -1,4 +1,3 @@
-alias more='more -R'
 alias sll='sudo ls -AlF --color '
 alias grep='grep -I --colour=always '
 alias lsop='lsof -nP -i | grep LISTEN'
@@ -9,3 +8,6 @@ alias du1='du -h -d 1 | sort -h'
 alias via='vim ~/.oh-my-zsh/lib/alias'
 alias mtu_500="sudo ifconfig $(route get google.com | grep --color=no interface | awk '{print $2}') mtu 500"
 alias mtu_reset="sudo ifconfig $(route get google.com | grep --color=no interface | awk '{print $2}') mtu 1500"
+alias c='cat '
+alias v='vim '
+alias t='tail -f '
