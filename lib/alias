@@ -1,7 +1,10 @@
 alias sll='sudo ls -AlF --color '
 alias grep='grep -I --colour=always '
+<<<<<<< HEAD
 alias lsop='lsof -nP -i | grep LISTEN'
 alias lss='ss -tunlp'
+=======
+>>>>>>> ubuntu
 alias psgrep='ps aux | grep -i '
 alias hgrep='history | grep -i '
 alias pst='pstree -aAUhnlp'
