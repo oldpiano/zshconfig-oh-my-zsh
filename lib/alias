@@ -17,6 +17,7 @@ alias t='tail -f '
 
 alias sc-log='journalctl -f -u '
 alias sc-daemon='sudo systemctl daemon-reload'
+<<<<<<< HEAD
 alias ns='sudo netstat -antp'
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -25,3 +26,6 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   alias mtu_reset="sudo ifconfig $(route get google.com | grep --color=no interface | awk '{print $2}') mtu 1500"
   alias notify='osascript ~/Library/Mobile\ Documents/com~apple~ScriptEditor2/Documents/notify.scpt '
 fi
+=======
+
+>>>>>>> add alias
