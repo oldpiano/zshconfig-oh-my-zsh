@@ -8,3 +8,7 @@ alias via='vim ~/.oh-my-zsh/lib/alias'
 alias c='cat '
 alias v='vim '
 alias t='tail -f '
+
+alias sc-log='journalctl -f -u '
+alias sc-daemon='sudo systemctl daemon-reload'
+

@@ -1,7 +1,6 @@
 colorscheme peachpuff
 syntax on
 set cursorline
-color molokai
 set showmode
 set nu
 set showmatch
@@ -34,5 +33,5 @@ set pastetoggle=<F12>           " pastetoggle (sane indentation on pastes)
 set gdefault     " the /g flag on :s substitutions by default
 set list
 "set listchars=tab:~\ ,trail:.,extends:#,nbsp:. " Highlight problematic whitespace
-set listchars=trail:⋅,nbsp:⋅,tab:~\ 
+"set listchars=trail:⋅,nbsp:⋅,tab:~\ 
 set viminfo='10,\"100,:30,%,n~/.viminfo
