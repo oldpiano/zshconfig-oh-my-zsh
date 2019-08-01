@@ -9,6 +9,7 @@ alias c='cat '
 alias v='vim '
 alias vv='sudo vim '
 alias t='tail -f '
+alias ns='sudo netstat -antp'
 
 alias sc-log='journalctl -f -u '
 alias sc-daemon='sudo systemctl daemon-reload'
