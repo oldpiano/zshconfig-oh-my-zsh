@@ -10,4 +10,5 @@ alias mtu_500="sudo ifconfig $(route get google.com | grep --color=no interface 
 alias mtu_reset="sudo ifconfig $(route get google.com | grep --color=no interface | awk '{print $2}') mtu 1500"
 alias c='cat '
 alias v='vim '
+alias vv='sudo vim '
 alias t='tail -f '
