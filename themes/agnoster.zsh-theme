@@ -92,7 +92,8 @@ prompt_context() {
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER@%m"
     #prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
     #prompt_segment black default "%(!.%{%F{yellow}%}.)%D{%m-%f} %*"
-    prompt_segment magenta default "%(!.%{%F{yellow}%}.)%*"
+    #prompt_segment magenta default "%(!.%{%F{yellow}%}.)%*"
+    prompt_segment black default "%(!.%{%F{yellow}%}.)%*"
   fi
 }
 
@@ -199,7 +200,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%1d'
+  prompt_segment cyan $CURRENT_FG '%1d'
   #prompt_segment blue $CURRENT_FG '%~'
 }
 
