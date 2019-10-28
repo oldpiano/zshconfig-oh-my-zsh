@@ -103,7 +103,7 @@ prompt_context() {
     #prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
     #prompt_segment black default "%(!.%{%F{yellow}%}.)%D{%m-%f} %*"
     #prompt_segment magenta default "%(!.%{%F{yellow}%}.)%*"
-    prompt_segment $ZSH_COLOR_TIMESTAMP default "%(!.%{%F{yellow}%}.)%*"
+    prompt_segment $ZSH_COLOR_TIMESTAMP black "%(!.%{%F{yellow}%}.)%*"
   fi
 }
 

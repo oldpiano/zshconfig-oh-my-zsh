@@ -12,6 +12,10 @@ alias v='vim '
 alias vv='sudo vim '
 alias t='tail -f '
 
+alias sc-log='journalctl -f -u '
+alias sc-daemon='sudo systemctl daemon-reload'
+alias ns='sudo netstat -antp'
+
 if [[ "$OSTYPE" == "darwin"* ]]; then
   alias mtu_500="sudo ifconfig $(route get google.com | grep --color=no interface | awk '{print $2}') mtu 500"
   alias mtu_reset="sudo ifconfig $(route get google.com | grep --color=no interface | awk '{print $2}') mtu 1500"
