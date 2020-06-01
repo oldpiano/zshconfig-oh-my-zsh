@@ -210,7 +210,11 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
+<<<<<<< HEAD
   prompt_segment $ZSH_COLOR_DIR $CURRENT_FG '%2d'
+=======
+  prompt_segment blue $CURRENT_FG '%2d'
+>>>>>>> display two depth path
   #prompt_segment blue $CURRENT_FG '%~'
 }
 
