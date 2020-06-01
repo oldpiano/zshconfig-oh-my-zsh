@@ -200,7 +200,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment cyan $CURRENT_FG '%1d'
+  prompt_segment cyan $CURRENT_FG '%2d'
   #prompt_segment blue $CURRENT_FG '%~'
 }
 
