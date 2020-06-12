@@ -20,4 +20,5 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   alias iterm='open -a iTerm '
   alias mtu_500="sudo ifconfig $(route get google.com | grep --color=no interface | awk '{print $2}') mtu 500"
   alias mtu_reset="sudo ifconfig $(route get google.com | grep --color=no interface | awk '{print $2}') mtu 1500"
+  alias notify='osascript ~/Library/Mobile\ Documents/com~apple~ScriptEditor2/Documents/notify.scpt '
 fi
