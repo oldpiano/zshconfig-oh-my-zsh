@@ -285,6 +285,8 @@ alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false &
 
 # restart bluetooth
 function restart_bluetooth() {
-  sudo kextunload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
-  sudo kextload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
+  #sudo kextunload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
+  #sudo kextload -b com.apple.iokit.BroadcomBluetoothHostControllerUSBTransport
+  /usr/local/bin/blueutil -p 0
+  /usr/local/bin/blueutil -p 1
 }
