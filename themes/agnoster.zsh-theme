@@ -39,6 +39,16 @@ case ${SOLARIZED_THEME:-dark} in
     *)     CURRENT_FG='black';;
 esac
 
+if [[ $ZSH_COLOR_DIR == '' ]]; then
+  ZSH_COLOR_DIR='cyan'
+fi
+if [[ $ZSH_COLOR_CONTEXT == '' ]]; then
+  ZSH_COLOR_CONTEXT='black'
+fi
+if [[ $ZSH_COLOR_TIMESTAMP == '' ]]; then
+  ZSH_COLOR_TIMESTAMP='green'
+fi
+
 # Special Powerline characters
 
 () {
@@ -89,10 +99,11 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER@%m"
+    prompt_segment $ZSH_COLOR_CONTEXT default "%(!.%{%F{yellow}%}.)$USER@%m"
     #prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
     #prompt_segment black default "%(!.%{%F{yellow}%}.)%D{%m-%f} %*"
-    prompt_segment magenta default "%(!.%{%F{yellow}%}.)%*"
+    #prompt_segment magenta default "%(!.%{%F{yellow}%}.)%*"
+    prompt_segment $ZSH_COLOR_TIMESTAMP $CURRENT_FG "%(!.%{%F{yellow}%}.)%*"
   fi
 }
 
@@ -199,7 +210,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue $CURRENT_FG '%1d'
+  prompt_segment $ZSH_COLOR_DIR $CURRENT_FG '%2d'
   #prompt_segment blue $CURRENT_FG '%~'
 }
 
