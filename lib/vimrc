@@ -1,6 +1,7 @@
 colorscheme peachpuff
 syntax on
 set cursorline
+color molokai
 set showmode
 set nu
 set showmatch
