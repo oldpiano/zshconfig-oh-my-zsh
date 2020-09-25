@@ -210,7 +210,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment $ZSH_COLOR_DIR $CURRENT_FG '%d'
+  prompt_segment $ZSH_COLOR_DIR $CURRENT_FG '%4d'
   #prompt_segment blue $CURRENT_FG '%~'
 }
 
