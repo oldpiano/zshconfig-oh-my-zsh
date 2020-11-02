@@ -12,6 +12,19 @@ alias v='vim '
 alias vv='sudo vim '
 alias t='tail -f '
 
+function frm() {
+  if [[ $# -eq 2 ]]; then
+    name=$2
+    op=$1
+  else
+    name=$1
+    op="-i"
+  fi
+
+  find . -name "$name"
+  find . -name "$name" -exec rm $op {} \;
+}
+
 alias sc-log='journalctl -f -u '
 alias sc-daemon='sudo systemctl daemon-reload'
 alias ns='sudo netstat -antp'
