@@ -1,5 +1,6 @@
 alias sll='sudo ls -AlF --color '
 alias grep='grep -I --colour=always '
+alias zgrep='zgrep -I --colour=always '
 alias lsop='lsof -nP -i | grep LISTEN'
 alias lss='ss -tunlp'
 alias psgrep='ps aux | grep -i '
