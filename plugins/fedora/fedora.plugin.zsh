@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Aliases
 
 alias dnfl="dnf list"                       # List packages
@@ -13,3 +14,8 @@ alias dnfgi="sudo dnf groupinstall"         # Install package group
 alias dnfr="sudo dnf remove"                # Remove package
 alias dnfgr="sudo dnf groupremove"          # Remove package group
 alias dnfc="sudo dnf clean all"             # Clean cache
+=======
+print -P "%F{yellow}The 'fedora' plugin is deprecated. Use the '%Udnf%u' plugin instead.%f"
+
+source "$ZSH/plugins/dnf/dnf.plugin.zsh"
+>>>>>>> upstream/master
