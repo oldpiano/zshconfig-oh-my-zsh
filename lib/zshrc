@@ -67,6 +67,7 @@ plugins=(
   globalias
   systemd
   flutter
+  timer
   $plugins
 )
 
