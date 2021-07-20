@@ -65,6 +65,7 @@ plugins=(
   zsh_reload
   globalalias
   systemd
+  timer
 )
 
 source $ZSH/oh-my-zsh.sh
