@@ -1,7 +1,7 @@
 alias sll='sudo ls -AlF --color '
 alias grep='grep -I --colour=always '
 alias zgrep='zgrep -I --colour=always '
-alias lsop='lsof -nP -i | grep LISTEN'
+alias lsop='sudo lsof -nP -i | grep LISTEN'
 alias lss='ss -tunlp'
 alias psgrep='ps aux | grep -i '
 alias hgrep='history | grep -i '
@@ -12,6 +12,20 @@ alias c='cat '
 alias v='vim '
 alias vv='sudo vim '
 alias t='tail -f '
+
+function frm() {
+  if [[ $# -eq 2 ]]; then
+    name=$2
+    op=$1
+  else
+    name=$1
+    op="-i"
+  fi
+
+  find . -name "$name"
+  find . -name "$name" -exec rm $op {} \;
+}
+
 alias sc-log='journalctl -f -u '
 alias sc-daemon='sudo systemctl daemon-reload'
 alias ns='sudo netstat -antp'

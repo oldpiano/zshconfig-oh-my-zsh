@@ -63,9 +63,10 @@ plugins=(
   common-aliases
   percol
   zsh_reload
-  globalalias
+  globalias
   systemd
   timer
+  $plugins
 )
 
 source $ZSH/oh-my-zsh.sh

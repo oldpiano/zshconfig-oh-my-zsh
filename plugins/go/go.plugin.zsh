@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # install in /etc/zsh/zshrc or your personal .zshrc
 
 # gc
@@ -191,3 +192,8 @@ alias gol='go list'
 alias gor='go run'
 alias got='go test'
 alias gov='go vet'
+=======
+print -P "%F{yellow}The 'go' plugin is deprecated. Use the '%Ugolang%u' plugin instead.%f"
+
+source "$ZSH/plugins/golang/golang.plugin.zsh"
+>>>>>>> upstream/master

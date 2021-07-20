@@ -1,6 +1,9 @@
+set langmenu=ko_KR.UTF-8
+let $LANG='ko_KR.UTF-8'
 colorscheme peachpuff
 syntax on
 set cursorline
+color molokai
 set showmode
 set nu
 set showmatch
