@@ -3,7 +3,7 @@ let $LANG='ko_KR.UTF-8'
 colorscheme peachpuff
 syntax on
 set cursorline
-color molokai
+"color molokai
 set showmode
 set nu
 set showmatch
