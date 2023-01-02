@@ -29,4 +29,5 @@ function frm() {
 alias sc-log='journalctl -f -u '
 alias sc-daemon='sudo systemctl daemon-reload'
 alias ns='sudo netstat -antp'
+alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
