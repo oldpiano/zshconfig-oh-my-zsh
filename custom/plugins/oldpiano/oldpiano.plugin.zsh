@@ -2,17 +2,6 @@
 # here will override ones with the same name in the main plugins directory.
 # See: https://github.com/ohmyzsh/ohmyzsh/wiki/Customization#overriding-and-adding-plugins
 
-export HIST_STAMPS="yyyy-mm-dd"
-
-export plugins=(
-  git
-  common-aliases
-  percol
-  systemd
-  timer
-  $plugins
-)
-
 export LANG=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
