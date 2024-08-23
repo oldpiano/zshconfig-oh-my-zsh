@@ -2,6 +2,21 @@
 # here will override ones with the same name in the main plugins directory.
 # See: https://github.com/ohmyzsh/ohmyzsh/wiki/Customization#overriding-and-adding-plugins
 
+export HIST_STAMPS="yyyy-mm-dd"
+
+export plugins=(
+  git
+  common-aliases
+  percol
+  systemd
+  timer
+  $plugins
+)
+
+export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 alias sll='sudo ls -AlF --color '
 alias grep='grep -I --colour=always '
 alias zgrep='zgrep -I --colour=always '
@@ -36,3 +51,13 @@ alias sc-daemon='sudo systemctl daemon-reload'
 alias ns='sudo netstat -antp'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 
+unset LSCOLORS
+export CLICOLOR=1
+export CLICOLOR_FORCE=1
+export DISABLE_UPDATE_PROMPT=true
+
+# HSTR configuration - add this to ~/.zshrc
+alias hh=hstr                    # hh to be alias for hstr
+setopt histignorespace           # skip cmds w/ leading space from history
+export HSTR_CONFIG=hicolor,prompt-bottom,raw-history-view       # get more colors
+bindkey -s "\C-r" "\C-a hstr -- \C-j"     # bind hstr to Ctrl-r (for Vi mode check doc)
